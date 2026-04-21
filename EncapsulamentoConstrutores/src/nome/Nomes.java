@@ -4,9 +4,7 @@ public class Nomes {
     private String nomeProprio;
     private String nomeMeio;
 
-    public String getNomeFamilia() {
-        return nomeFamilia;
-    }
+    
 
     public void setNomeFamilia(String nomeFamilia) {
         this.nomeFamilia = nomeFamilia;
