@@ -60,12 +60,29 @@ public class Nomes {
     public void retornarRubrica(){
         String[] partes = nomeCompleto.split(" ");
         String rubrica = "";
-        System.out.println("Rubrica: " + rubrica);
+        String rubricaMinucula = rubrica.toLowerCase();
         for(String nome : partes){
             if(!nome.isEmpty()){
                 rubrica += nome.charAt(0);
             }
         }
-        System.out.println("Rubrica: " + rubrica.toUpperCase());
+        System.out.println("Rubrica: " + rubrica.toLowerCase());
+    }
+    public void retornarAssinatura(){
+        String[] partes = nomeCompleto.split(" ");
+        StringBuilder assinatura = new StringBuilder();
+
+        for(int i = 0; i < partes.length; i++){
+            if(i < partes.length -1){
+                String inicial = partes[i].substring(0,1).toUpperCase();
+                assinatura.append(inicial).append(". ");
+            }
+            else{
+                assinatura.append(partes[i]);
+            }
+
+        }
+        System.out.println("Assinatura: " + assinatura.toString());
+
     }
 }

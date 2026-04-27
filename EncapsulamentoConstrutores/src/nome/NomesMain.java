@@ -9,10 +9,14 @@ public class NomesMain {
         Nomes nome2 = new Nomes("João", "Pereira", "Silva");
         Nomes nome3 = new Nomes();
         nome3.setNomeCompleto(sc.nextLine());
+
         nome1.imprimirNomes();
         nome1.retornarRubrica();
+        nome1.retornarAssinatura();
         nome2.imprimirNomes2();
+
         nome3.imprimirNomes();
+
 
     }
 }
